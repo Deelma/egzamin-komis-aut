@@ -8,3 +8,4 @@ Zapytanie 3:
 SELECT `nazwa`, `model`, `rocznik`, `cena`, `zdjecie` FROM `marki` INNER JOIN `samochody` ON `samochody`.`marki_id` = `marki`.`id` WHERE `samochody`.`wyrozniony` = 1;
 
 Zapytanie 4:
+SELECT `model`, `cena`, `zdjecie` FROM `samochody` INNER JOIN `marki` ON `marki`.`id` = `samochody`.`marki_id` WHERE `marki`.`nazwa` LIKE "Audi";
