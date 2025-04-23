@@ -5,7 +5,7 @@ Zapytanie 2:
 SELECT `model`, `rocznik`, `przebieg`, `paliwo`, `cena`, `zdjecie` FROM `samochody` WHERE `id` = 10;
 
 Zapytanie 3:
-SELECT `nazwa`, `model`, `rocznik`, `cena`, `zdjecie` FROM `marki` INNER JOIN `samochody` ON `samochody`.`marki_id` = `marki`.`id` WHERE `samochody`.`wyrozniony` = 1;
+SELECT `nazwa`, `model`, `rocznik`, `cena`, `zdjecie` FROM `marki` INNER JOIN `samochody` ON `samochody`.`marki_id` = `marki`.`id` WHERE `samochody`.`wyrozniony` = 1 LIMIT 4;
 
 Zapytanie 4:
 SELECT `model`, `cena`, `zdjecie` FROM `samochody` INNER JOIN `marki` ON `marki`.`id` = `samochody`.`marki_id` WHERE `marki`.`nazwa` LIKE "Audi";

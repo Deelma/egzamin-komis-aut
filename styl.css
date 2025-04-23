@@ -52,3 +52,11 @@ h4{
 a{
     color: white;
 }
+
+.oferty{
+    display: flex;
+}
+
+#ofertymarki{
+    flex-wrap: wrap;
+}
